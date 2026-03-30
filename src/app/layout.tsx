@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.tagline,
-  keywords: siteConfig.seoKeywords,
+  keywords: [...siteConfig.seoKeywords],
   authors: [{ name: siteConfig.name }],
   openGraph: {
     title: siteConfig.name,
