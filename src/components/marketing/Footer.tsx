@@ -74,9 +74,23 @@ export function Footer() {
 
         <div className="mt-10 flex flex-col gap-3 border-t border-sky-100/90 pt-6 text-xs text-slate-500 md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
-          <p className="md:text-right">
-            Built with Next.js · Secure by design · Ready to launch
-          </p>
+          <a
+            href="https://www.linkedin.com/company/codersalley"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 font-medium text-slate-600 transition-colors hover:text-sky-700 md:text-right"
+            aria-label="Visit Coders Alley on LinkedIn"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              className="h-4 w-4 fill-current"
+              aria-hidden="true"
+            >
+              <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19ZM8.34 10.2H5.66V18H8.34V10.2ZM7 5.95A1.56 1.56 0 1 0 7 9.07A1.56 1.56 0 1 0 7 5.95ZM18.34 13.47C18.34 11.11 17.08 10.02 15.39 10.02C14.03 10.02 13.42 10.76 13.08 11.28V10.2H10.5C10.53 10.91 10.5 18 10.5 18H13.08V13.67C13.08 13.44 13.1 13.2 13.17 13.04C13.35 12.57 13.74 12.08 14.44 12.08C15.36 12.08 15.73 12.78 15.73 13.8V18H18.34V13.47Z" />
+            </svg>
+            <span>LinkedIn</span>
+          </a>
         </div>
       </Container>
     </footer>
