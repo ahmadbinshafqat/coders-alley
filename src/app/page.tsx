@@ -130,51 +130,37 @@ export default function Home() {
             <div className="relative">
               <div className="absolute -left-10 top-10 h-40 w-40 rounded-full bg-sky-500/25 blur-2xl" />
               <div className="absolute -right-10 top-0 h-48 w-48 rounded-full bg-emerald-500/25 blur-2xl" />
-
-              <div className="glass-panel relative overflow-hidden p-6 sm:p-7">
-                <div className="absolute -right-8 -top-8 h-28 w-28 rounded-full bg-gradient-to-br from-sky-500/30 to-emerald-500/30 blur-2xl" />
-                <div className="flex items-center justify-between">
-                  <div className="inline-flex items-center gap-2 rounded-xl bg-white/85 px-3 py-2 ring-1 ring-sky-100">
-                    <div className="relative h-7 w-7 overflow-hidden rounded-md">
-                      <Image src="/logo.svg" alt="Coders Alley logo" fill className="object-cover" />
-                    </div>
-                    <span className="text-xs font-semibold text-slate-700">Coders Alley stack</span>
-                  </div>
-                  <span className="rounded-full bg-gradient-to-r from-sky-500/20 to-emerald-500/20 px-3 py-1 text-xs font-semibold text-slate-700">
-                    Live delivery
-                  </span>
-                </div>
-
-                <div className="mt-6 space-y-3">
-                  <div className="rounded-2xl bg-white/80 p-4 ring-1 ring-sky-100">
-                    <div className="flex items-center justify-between gap-3">
-                      <p className="text-sm font-semibold text-slate-900">Web Platform Revamp</p>
-                      <span className="text-xs font-semibold text-sky-700">Phase 02</span>
-                    </div>
-                    <p className="mt-2 text-xs text-slate-600">UI modernization · API reliability · Analytics</p>
-                  </div>
-                  <div className="rounded-2xl bg-white/80 p-4 ring-1 ring-emerald-100">
-                    <div className="flex items-center justify-between gap-3">
-                      <p className="text-sm font-semibold text-slate-900">AI Workflow Assistant</p>
-                      <span className="text-xs font-semibold text-emerald-700">Ready for QA</span>
-                    </div>
-                    <p className="mt-2 text-xs text-slate-600">RAG pipeline · Prompt guardrails · Eval loop</p>
-                  </div>
-                </div>
-
-                <div className="mt-6 grid grid-cols-3 gap-3">
-                  <div className="rounded-xl bg-white/85 p-3 ring-1 ring-slate-100">
-                    <p className="text-[11px] font-semibold text-slate-500">Velocity</p>
-                    <p className="mt-1 text-sm font-semibold text-slate-900">+42%</p>
-                  </div>
-                  <div className="rounded-xl bg-white/85 p-3 ring-1 ring-slate-100">
-                    <p className="text-[11px] font-semibold text-slate-500">Stability</p>
-                    <p className="mt-1 text-sm font-semibold text-slate-900">99.9%</p>
-                  </div>
-                  <div className="rounded-xl bg-white/85 p-3 ring-1 ring-slate-100">
-                    <p className="text-[11px] font-semibold text-slate-500">AI quality</p>
-                    <p className="mt-1 text-sm font-semibold text-slate-900">A-grade</p>
-                  </div>
+              <div className="mt-8 mb-8 hidden max-w-md lg:block ml-auto">
+                {/* <div className="mb-2 text-sm font-semibold text-slate-700">
+                  A disciplined process — from discovery to launch
+                </div> */}
+                <p className="mt-3 max-w-2xl text-slate-600">
+                  From discovery to launch, we reduce risk, improve clarity, and keep delivery predictable.
+                </p>
+                
+                {/* <p className="mt-3 max-w-2xl text-slate-600">
+                  We reduce risk, improve clarity, and keep delivery predictable.
+                </p> */}
+                <div className="relative pl-5">
+                  <div className="absolute left-1.5 top-0 h-full w-[2px] bg-gradient-to-b from-sky-300 via-cyan-300 to-emerald-300" />
+                  <ul className="space-y-4">
+                    {process.slice(0, 4).map((p) => (
+                      <li key={p.step} className="relative">
+                        <div className="absolute -left-[11px] top-2 h-3.5 w-3.5 rounded-full bg-white ring-2 ring-sky-400" />
+                        <div className="rounded-xl bg-white/75 px-4 py-3 ring-1 ring-slate-100 backdrop-blur">
+                          <div className="flex items-center gap-2">
+                            <span className="inline-flex h-6 w-6 items-center justify-center rounded-md bg-gradient-to-r from-sky-500/20 to-emerald-500/20 text-[10px] font-semibold text-slate-700 ring-1 ring-sky-100">
+                              {p.step}
+                            </span>
+                            <span className="text-sm font-semibold text-slate-900">
+                              {p.title}
+                            </span>
+                          </div>
+                          <p className="mt-1.5 text-xs text-slate-600">{p.description}</p>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </div>
@@ -221,7 +207,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="bg-gradient-to-b from-sky-50/65 via-white to-emerald-50/35 py-16 sm:py-20">
+      {/* <section className="bg-gradient-to-b from-sky-50/65 via-white to-emerald-50/35 py-16 sm:py-20">
         <Container>
           <div>
             <h2 className="section-title">A disciplined process—from discovery to launch</h2>
@@ -244,7 +230,7 @@ export default function Home() {
             ))}
           </div>
         </Container>
-      </section>
+      </section> */}
 
       <section className="py-16 sm:py-20">
         <Container>
